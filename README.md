@@ -28,7 +28,7 @@ Below is a list of projects, a brief overview of each, and the respective branch
   - Sales trend analysis across regions and platforms.
   - Preprocessing techniques: Handling missing data, outlier detection, standardization.
   - R² Scores: Random Forest (0.86), XGBoost (0.88).
-- **Branch**: [video-game-sales-prediction](https://github.com/yourusername/machine-learning-portfolio/tree/video-game-sales-prediction)
+- **Branch**: [Video Game Sales Analysis](https://github.com/shishir95/machine-learning-projects/tree/features/inside-into-global-sales-prediction)
 
 ---
 
