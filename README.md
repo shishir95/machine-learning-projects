@@ -47,5 +47,6 @@ Each project is hosted on a separate branch. To explore a project:
 
 If you have questions or feedback, feel free to reach out:If you have questions or feedback, feel free to reach out:
 
-Email: khanamanat675@gmail.com
-Linkdin: [Md Amanat Khan Shishir] (https://www.linkedin.com/in/shishir95/)
+- **Email**: khanamanat675@gmail.com
+
+- **Linkdin**: [Md Amanat Khan Shishir](https://www.linkedin.com/in/shishir95/)
