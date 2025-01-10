@@ -1,52 +1,100 @@
-# Machine Learning Portfolio
-
-Welcome to my **Machine Learning Projects**, showcasing various projects that explore data science, predictive modeling, and advanced machine learning techniques. Each project is hosted on a separate branch for modularity and ease of access.
-
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Projects](#projects)
-3. [How to Access](#how-to-access)
-4. [Contact](#contact)
-
----
+# Global Video Game Sales Prediction
 
 ## Overview
 
-This repository contains a collection of machine learning projects I’ve worked on during my academic journey and personal research. Each project demonstrates skills in data preprocessing, exploratory data analysis (EDA), feature engineering, and model development.
+This repository contains the final report and associated resources for the **Global Video Game Sales Prediction** project. This project analyzes historical video game sales data to uncover market trends and build predictive models using machine learning techniques. The analysis highlights regional preferences, platform popularity, and genre trends, offering actionable insights for stakeholders in the gaming industry.
 
----
+## Table of Contents
 
-## Projects
+- [Project Description](#project-description)
+- [Dataset Description](#dataset-description)
+- [Data Preprocessing](#data-preprocessing)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis)
+- [Modeling and Results](#modeling-and-results)
+- [Key Findings](#key-findings)
+- [Future Implications](#future-implications)
+- [References](#references)
 
-Below is a list of projects, a brief overview of each, and the respective branch links:
+## Project Description
 
-### 1. **Global Video Game Sales Prediction**
+The video game industry generates billions of dollars annually, making it a cornerstone of the global entertainment sector. This project aims to:
 
-- **Description**: Analysis and prediction of global video game sales using Random Forest and XGBoost models.
-- **Key Highlights**:
-  - Sales trend analysis across regions and platforms.
-  - Preprocessing techniques: Handling missing data, outlier detection, standardization.
-  - R² Scores: Random Forest (0.86), XGBoost (0.88).
-- **Branch**: [video-game-sales-prediction](https://github.com/yourusername/machine-learning-portfolio/tree/video-game-sales-prediction)
+- Predict global video game sales based on historical data.
+- Identify trends in genres, platforms, and regional preferences.
+- Use machine learning models to optimize sales predictions.
 
----
+## Dataset Description
 
-## How to Access
+- **Source:** [Kaggle - Video Game Sales Dataset](https://www.kaggle.com/)
+- **Features:** 16 attributes, including:
+  - `Platform`, `Genre`, `Year_of_Release`, `Publisher`
+  - Regional sales data (`NA_Sales`, `EU_Sales`, `JP_Sales`, `Other_Sales`)
+  - Target variable: `Global_Sales`
+- **Size:** 16,719 entries.
+- **Challenges:** Missing values in `Critic_Score`, `User_Score`, and `Developer` columns.
 
-Each project is hosted on a separate branch. To explore a project:
+## Data Preprocessing
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/shishir95/machine-learning-projects.git
-   ```
+1. **Handling Missing Data:**
+   - Imputation for numerical and categorical columns.
+   - Dropped columns with excessive missing values.
+2. **Outlier Detection:** Applied Interquartile Range (IQR) method to reduce the influence of extreme values.
+3. **Standardization:** Scaled sales data for consistent comparison.
 
----
+## Exploratory Data Analysis (EDA)
 
-## Contact
+- **Platform Analysis:** PlayStation and Xbox dominate global sales.
+- **Genre Trends:** Sports and Shooter genres outperform others; Strategy has the lowest sales.
+- **Regional Preferences:**
+  - North America favors Action and Shooter games.
+  - Japan prefers Role-Playing Games (RPGs).
+- **Visualizations:** Box plots, scatter plots, and heatmaps reveal patterns and relationships.
 
-If you have questions or feedback, feel free to reach out:If you have questions or feedback, feel free to reach out:
+## Modeling and Results
 
-- **Email**: khanamanat675@gmail.com
+Two machine learning models were implemented:
 
-- **Linkdin**: [Md Amanat Khan Shishir](https://www.linkedin.com/in/shishir95/)
+### Random Forest Regressor
+
+- **R²:** 0.875
+- **MAE:** 0.0223
+- **MSE:** 0.0013
+
+### XGBoost Regressor
+
+- **R²:** 0.8848
+- **MAE:** 0.0216
+- **MSE:** 0.0012
+
+**Comparison:** XGBoost slightly outperformed Random Forest, demonstrating superior predictive accuracy and generalization.
+
+## Key Findings
+
+1. **Regional Variations:**
+   - North America prefers Action/Shooter genres.
+   - Japan favors RPGs.
+2. **Platform Trends:**
+   - PlayStation and Xbox lead global sales.
+3. **Genre Influence:**
+   - Sports and Shooter genres contribute significantly to global sales.
+
+## Future Implications
+
+- **Game Development:** Focus on region-specific preferences and popular genres.
+- **Marketing Strategies:** Leverage insights for targeted advertising and optimized release timings.
+- **Distribution:** Emphasize platforms with higher sales potential.
+
+## References
+
+1. [Kaggle - Video Game Sales Dataset](https://www.kaggle.com/datasets/sidtwr/videogames-sales-dataset/data)
+2. VanderPlas, J. (2016). _Python Data Science Handbook._
+3. Hyndman, R. J., & Athanasopoulos, G. (2018). _Forecasting: Principles and Practice._
+4. Breiman, L. (2001). _Random Forests._
+5. Chen, T., & Guestrin, C. (2016). _XGBoost: A Scalable Tree Boosting System._
+
+## Repository Structure
+
+- **`dataset/`**: Raw dataset from kaggle.
+- **`notebooks/`**: Jupyter notebooks for analysis and modeling.
+- **`report/`**: Contains the final report document.
+- **`README.md`**: This file.
