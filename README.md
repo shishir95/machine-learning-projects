@@ -1,52 +1,81 @@
-# Machine Learning Portfolio
-
-Welcome to my **Machine Learning Projects**, showcasing various projects that explore data science, predictive modeling, and advanced machine learning techniques. Each project is hosted on a separate branch for modularity and ease of access.
-
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Projects](#projects)
-3. [How to Access](#how-to-access)
-4. [Contact](#contact)
-
----
+# Develop Machine Learning Model to Predict Annual Return of Stock Profile Based on Historical Data
 
 ## Overview
 
-This repository contains a collection of machine learning projects I’ve worked on during my academic journey and personal research. Each project demonstrates skills in data preprocessing, exploratory data analysis (EDA), feature engineering, and model development.
+This repository contains resources for analyzing historical stock data to predict annual returns using machine learning techniques. The project examines key financial metrics—including Relative Win Rate (%), Large S/P, Access Return, Systematic Risk, Total Risk, and Excess Return—to determine their relationship with the target variable, Annual Return.
 
----
+## Table of Contents
 
-## Projects
+- [Project Description](#project-description)
+- [Dataset Description](#dataset-description)
+- [Data Preprocessing](#data-preprocessing)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis)
+- [Modeling and Results](#modeling-and-results)
+- [Key Findings](#key-findings)
+- [Future Implications](#future-implications)
+- [References](#references)
 
-Below is a list of projects, a brief overview of each, and the respective branch links:
+## Project Description
 
-### 1. **Global Video Game Sales Prediction**
+This project focuses on predicting the Annual Return of a stock portfolio by leveraging historical stock market data and machine learning techniques. The analysis explores key financial metrics to uncover patterns and improve prediction accuracy.
 
-- **Description**: Analysis and prediction of global video game sales using Random Forest and XGBoost models.
-- **Key Highlights**:
-  - Sales trend analysis across regions and platforms.
-  - Preprocessing techniques: Handling missing data, outlier detection, standardization.
-  - R² Scores: Random Forest (0.86), XGBoost (0.88).
-- **Branch**: [Video Game Sales Analysis](https://github.com/shishir95/machine-learning-projects/tree/features/inside-into-global-sales-prediction)
+- Analyze historical stock performance and market trends.
+- Identify the relationship between Relative Win Rate (%), Large S/P, Access Return, Systematic Risk, Total Risk, and Excess Return with Annual Return.
+- Build and evaluate predictive models using machine learning techniques using Linear Regression.
 
----
+## Dataset Description
 
-## How to Access
+- **Source:** [Kaggle - Video Game Sales Dataset](https://archive.ics.uci.edu/dataset/390/stock+portfolio+performance)
+- **Features:** 10 attributes, including:
+  - `Period`, `ID`, `Large B/P`, `Large ROE`, `Large S/P`, `Large Return Rate in the last quarter`, `Large Market Value`, `Small systematic Risk`, `Excess Return`
+  - Target variable: `Annual Return`
+- **Size:** 63 entries.
 
-Each project is hosted on a separate branch. To explore a project:
+## Data Preprocessing
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/shishir95/machine-learning-projects.git
-   ```
+1. **Handling Missing Data:**
+   - Imputation for numerical and categorical columns.
+   - Dropped columns with excessive missing values.
+2. **Outlier Detection:** Applied Interquartile Range (IQR) method to reduce the influence of extreme values.
 
----
+## Exploratory Data Analysis (EDA)
 
-## Contact
+- **Excess Return Analysis:** There is a strong positive correlation between Excess Return (%) and Annual Return.
+- **Systematic Risk:** There is a positive correlation between Systematic Risk and Annual Return, but it is less structured compared to the Excess Return vs. Annual Return plot.
+- **Visualizations:** Box plots, scatter plots, and heatmaps reveal patterns and relationships.
 
-If you have questions or feedback, feel free to reach out:If you have questions or feedback, feel free to reach out:
+## Modeling and Results
 
-- **Email**: khanamanat675@gmail.com
+Linear Regression model was implemented:
 
-- **Linkdin**: [Md Amanat Khan Shishir](https://www.linkedin.com/in/shishir95/)
+### Linear Regression
+
+- **R²:** 1.0
+- **MAE:** 1.67
+- **MSE:** 3.801
+
+## Key Findings
+
+1. **Regional Variations:**
+   - North America prefers Action/Shooter genres.
+   - Japan favors RPGs.
+2. **Platform Trends:**
+   - PlayStation and Xbox lead global sales.
+3. **Genre Influence:**
+   - Sports and Shooter genres contribute significantly to global sales.
+
+## Future Implications
+
+- **Game Development:** Focus on region-specific preferences and popular genres.
+- **Marketing Strategies:** Leverage insights for targeted advertising and optimized release timings.
+- **Distribution:** Emphasize platforms with higher sales potential.
+
+## References
+
+1. [Machine Learning Repository - Stock Portfolio Performance](https://www.kaggle.com/datasets/sidtwr/videogames-sales-dataset/data)
+
+## Repository Structure
+
+- **`dataset/`**: Raw dataset from Machine Learning Repository.
+- **`notebooks/`**: Jupyter notebooks for analysis and modeling.
+- **`README.md`**: This file.
