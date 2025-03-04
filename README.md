@@ -11,8 +11,6 @@ This repository contains resources for analyzing historical stock data to predic
 - [Data Preprocessing](#data-preprocessing)
 - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis)
 - [Modeling and Results](#modeling-and-results)
-- [Key Findings](#key-findings)
-- [Future Implications](#future-implications)
 - [References](#references)
 
 ## Project Description
@@ -53,22 +51,6 @@ Linear Regression model was implemented:
 - **R²:** 1.0
 - **MAE:** 1.67
 - **MSE:** 3.801
-
-## Key Findings
-
-1. **Regional Variations:**
-   - North America prefers Action/Shooter genres.
-   - Japan favors RPGs.
-2. **Platform Trends:**
-   - PlayStation and Xbox lead global sales.
-3. **Genre Influence:**
-   - Sports and Shooter genres contribute significantly to global sales.
-
-## Future Implications
-
-- **Game Development:** Focus on region-specific preferences and popular genres.
-- **Marketing Strategies:** Leverage insights for targeted advertising and optimized release timings.
-- **Distribution:** Emphasize platforms with higher sales potential.
 
 ## References
 
