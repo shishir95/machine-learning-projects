@@ -23,7 +23,7 @@ This project focuses on predicting the Annual Return of a stock portfolio by lev
 
 ## Dataset Description
 
-- **Source:** [Kaggle - Video Game Sales Dataset](https://archive.ics.uci.edu/dataset/390/stock+portfolio+performance)
+- **Source:** [Kaggle - Video Stock Portfolio Dataset](https://archive.ics.uci.edu/dataset/390/stock+portfolio+performance)
 - **Features:** 10 attributes, including:
   - `Period`, `ID`, `Large B/P`, `Large ROE`, `Large S/P`, `Large Return Rate in the last quarter`, `Large Market Value`, `Small systematic Risk`, `Excess Return`
   - Target variable: `Annual Return`
