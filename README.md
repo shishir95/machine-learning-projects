@@ -29,14 +29,16 @@ Below is a list of projects, a brief overview of each, and the respective branch
   - Preprocessing techniques: Handling missing data, outlier detection, standardization.
   - R² Scores: Random Forest (0.86), XGBoost (0.88).
 - **Branch**: [Video Game Sales Analysis](https://github.com/shishir95/machine-learning-projects/tree/features/inside-into-global-sales-prediction)
-### 1. **Global Video Game Sales Prediction**
+  
+### 2. **Stock Portfolio Performance Analysis**
 
 - **Description**: Analysis and prediction of global video game sales using Random Forest and XGBoost models.
 - **Key Highlights**:
-  - Sales trend analysis across regions and platforms.
-  - Preprocessing techniques: Handling missing data, outlier detection, standardization.
-  - R² Scores: Random Forest (0.86), XGBoost (0.88).
-- **Branch**: [Stock Portfolio Performance Analysis]([https://github.com/shishir95/machine-learning-projects/tree/features/inside-into-global-sales-prediction](https://github.com/shishir95/machine-learning-projects/tree/features/stock-portfolio-performance-prediction))
+  - The pair plot provides a view of the relationships between the continuous and categorical variables in the dataset.
+  - - Preprocessing techniques: Handling missing data, outlier detection, Data normalization.
+  - Correlation heatmap between features.
+  - Applied Linear regression model to forecast stock performance
+- **Branch**: [Stock Portfolio Performance Analysis]([https://github.com/shishir95/machine-learning-projects/tree/features/inside-into-global-sales-prediction])
 
 ---
 
