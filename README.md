@@ -1,62 +1,51 @@
-# Machine Learning Portfolio
+# Phishing Website Detection
 
-Welcome to my **Machine Learning Projects**, showcasing various projects that explore data science, predictive modeling, and advanced machine learning techniques. Each project is hosted on a separate branch for modularity and ease of access.
+This project aims to build a machine learning model to detect phishing websites based on various URL and website features. The dataset used in this project is obtained from the UCI Machine Learning Repository.
 
-## Table of Contents
+## Data
 
-1. [Overview](#overview)
-2. [Projects](#projects)
-3. [How to Access](#how-to-access)
-4. [Contact](#contact)
+The dataset used is the "Phishing Websites Dataset" from the UCI Machine Learning Repository. It contains 11055 instances and 31 features, including the target variable "Result".
 
----
+## Exploratory Data Analysis
 
-## Overview
+Initial exploratory data analysis revealed:
 
-This repository contains a collection of machine learning projects I’ve worked on during my academic journey and personal research. Each project demonstrates skills in data preprocessing, exploratory data analysis (EDA), feature engineering, and model development.
+- No missing values in the dataset.
+- The dataset is relatively balanced, with a slightly higher number of instances for the positive class (1) compared to the negative class (-1).
+- Most features exhibit weak to moderate correlations with each other and the target variable.
 
----
+## Model Selection and Evaluation
 
-## Projects
+Two classification models were explored:
 
-Below is a list of projects, a brief overview of each, and the respective branch links:
+1.  **Logistic Regression:**
 
-### 1. **Global Video Game Sales Prediction**
+    - Achieved a mean accuracy of 93% with a standard deviation of 0.01 across 10-fold cross-validation.
+    - The classification report showed consistent precision, recall, and F1-scores around 0.93 for both classes.
 
-- **Description**: Analysis and prediction of global video game sales using Random Forest and XGBoost models.
-- **Key Highlights**:
-  - Sales trend analysis across regions and platforms.
-  - Preprocessing techniques: Handling missing data, outlier detection, standardization.
-  - R² Scores: Random Forest (0.86), XGBoost (0.88).
-- **Branch**: [Video Game Sales Analysis](https://github.com/shishir95/machine-learning-projects/tree/features/inside-into-global-sales-prediction)
-  
-### 2. **Stock Portfolio Performance Analysis**
+2.  **Random Forest:**
+    - Achieved a mean accuracy of 95% with a standard deviation of 0.00 across 10-fold cross-validation.
+    - The classification report indicated excellent performance, with precision, recall, and F1-scores around 0.95-0.96 for both classes.
 
-- **Description**: Analysis and prediction of global video game sales using Random Forest and XGBoost models.
-- **Key Highlights**:
-  - The pair plot provides a view of the relationships between the continuous and categorical variables in the dataset.
-  - - Preprocessing techniques: Handling missing data, outlier detection, Data normalization.
-  - Correlation heatmap between features.
-  - Applied Linear regression model to forecast stock performance
-- **Branch**: [Stock Portfolio Performance Analysis](https://github.com/shishir95/machine-learning-projects/tree/features/stock-portfolio-performance-prediction)
+Based on the evaluation metrics, the Random Forest model demonstrated slightly better performance and consistency compared to Logistic Regression for this dataset.
 
----
+## Conclusion
 
-## How to Access
+The Random Forest model shows promising results for detecting phishing websites based on the provided features. Further improvements could be explored by trying other models, feature engineering, or hyperparameter tuning.
 
-Each project is hosted on a separate branch. To explore a project:
+## How to Run the Notebook
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/shishir95/machine-learning-projects.git
-   ```
+1. Clone the repository (if applicable).
+2. Open the notebook in Google Colab.
+3. Run the cells sequentially.
 
----
+## Dependencies
 
-## Contact
-
-If you have questions or feedback, feel free to reach out:If you have questions or feedback, feel free to reach out:
-
-- **Email**: khanamanat675@gmail.com
-
-- **Linkdin**: [Md Amanat Khan Shishir](https://www.linkedin.com/in/shishir95/)
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- seaborn
+- liac-arff
+- requests
+- io
