@@ -38,7 +38,7 @@ Below is a list of projects, a brief overview of each, and the respective branch
   - - Preprocessing techniques: Handling missing data, outlier detection, Data normalization.
   - Correlation heatmap between features.
   - Applied Linear regression model to forecast stock performance
-- **Branch**: [Stock Portfolio Performance Analysis]([https://github.com/shishir95/machine-learning-projects/tree/features/inside-into-global-sales-prediction])
+- **Branch**: [Stock Portfolio Performance Analysis](https://github.com/shishir95/machine-learning-projects/tree/features/stock-portfolio-performance-prediction)
 
 ---
 
