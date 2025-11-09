@@ -1,62 +1,33 @@
-# Machine Learning Portfolio
-
-Welcome to my **Machine Learning Projects**, showcasing various projects that explore data science, predictive modeling, and advanced machine learning techniques. Each project is hosted on a separate branch for modularity and ease of access.
-
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Projects](#projects)
-3. [How to Access](#how-to-access)
-4. [Contact](#contact)
-
----
-
 ## Overview
 
-This repository contains a collection of machine learning projects I’ve worked on during my academic journey and personal research. Each project demonstrates skills in data preprocessing, exploratory data analysis (EDA), feature engineering, and model development.
+This notebook explores the Caesarian Section Classification dataset to predict whether a patient will require a caesarian section based on various health indicators.
 
----
+## Dataset
 
-## Projects
+The dataset contains information about patients, including:
 
-Below is a list of projects, a brief overview of each, and the respective branch links:
+Age
+Delivery number
+Delivery time (Premature, Timely, Latecomer)
+Blood Pressure (Low, Normal, High)
+Heart Problem (Apt, Inept)
+Caesarian (Target variable: No, Yes)
+The dataset was loaded from a .arff file and converted to a pandas DataFrame. Initial data exploration revealed no missing values.
 
-### 1. **Global Video Game Sales Prediction**
+## Data Preprocessing
 
-- **Description**: Analysis and prediction of global video game sales using Random Forest and XGBoost models.
-- **Key Highlights**:
-  - Sales trend analysis across regions and platforms.
-  - Preprocessing techniques: Handling missing data, outlier detection, standardization.
-  - R² Scores: Random Forest (0.86), XGBoost (0.88).
-- **Branch**: [Video Game Sales Analysis](https://github.com/shishir95/machine-learning-projects/tree/features/inside-into-global-sales-prediction)
-  
-### 2. **Stock Portfolio Performance Analysis**
+The categorical variables were encoded using Label Encoding, and the numerical features were normalized using MinMaxScaler.
 
-- **Description**: Analysis and prediction of global video game sales using Random Forest and XGBoost models.
-- **Key Highlights**:
-  - The pair plot provides a view of the relationships between the continuous and categorical variables in the dataset.
-  - - Preprocessing techniques: Handling missing data, outlier detection, Data normalization.
-  - Correlation heatmap between features.
-  - Applied Linear regression model to forecast stock performance
-- **Branch**: [Stock Portfolio Performance Analysis](https://github.com/shishir95/machine-learning-projects/tree/features/stock-portfolio-performance-prediction)
+## Exploratory Data Analysis
 
----
+Various visualizations, including histograms, scatter plots, pair plots, and box plots, were used to understand the distribution of features and their relationship with the target variable. A correlation heatmap was also generated to visualize the relationships between features.
 
-## How to Access
+## Model Selection and Evaluation
 
-Each project is hosted on a separate branch. To explore a project:
+Logistic Regression and Random Forest models were trained and evaluated using Leave-One-Out cross-validation. Hyperparameter tuning was performed using GridSearchCV.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/shishir95/machine-learning-projects.git
-   ```
+The results of the model evaluation, including accuracy, confusion matrices, and classification reports, are presented in the notebook. The Leave-One-Out cross-validation revealed high variability in model performance, likely due to the small dataset size and potential class imbalance.
 
----
+## Conclusion
 
-## Contact
-
-If you have questions or feedback, feel free to reach out:If you have questions or feedback, feel free to reach out:
-
-- **Email**: khanamanat675@gmail.com
-
-- **Linkdin**: [Md Amanat Khan Shishir](https://www.linkedin.com/in/shishir95/)
+The analysis provides insights into the factors influencing caesarian sections based on this dataset and evaluates the performance of different classification models. Further work could involve exploring more advanced models, addressing class imbalance, and gathering more data to improve model performance and reliability.
